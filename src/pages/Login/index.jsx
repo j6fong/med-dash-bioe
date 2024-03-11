@@ -19,6 +19,10 @@ const Login = () => {
         message.success('success')
 
     }
+
+    const handleCancel = () => {
+      navigate('/landing'); // Navigate to the landing page
+    };
   return (
     <div className="login">
       <Card className="login-container">
@@ -52,6 +56,11 @@ const Login = () => {
               Login
             </Button>
           </Form.Item>
+          <Form.Item>
+                <Button type="primary" htmlType="submit" onClick={handleCancel} size="large" block>
+                    Cancel
+                </Button>
+            </Form.Item>
         </Form>
       </Card>
     </div>
@@ -59,3 +68,4 @@ const Login = () => {
 };
 
 export default Login;
+

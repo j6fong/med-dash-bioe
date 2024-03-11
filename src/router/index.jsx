@@ -6,9 +6,15 @@ import Home from "@/pages/Home";
 import Visualization from "@/components/Visualization";
 import HealthHabit from '@/components/HealthHabit';
 import DiaryEntries from "@/components/DiaryEntries";
+import Landing from "@/pages/Landing";
 
 const router = createBrowserRouter([
     {
+        path: "/landing",
+        element: <Landing/>
+    },
+    {
+        
         path: "/",
         element: <AuthRoute> <Layout/> </AuthRoute>,
         children:[
@@ -27,11 +33,7 @@ const router = createBrowserRouter([
             {
                 path:'healthAnalysis',
                 element: <Visualization />
-            }//,
-            // {
-            //     path:'carouseldemo',
-            //     element: <DiaryEntries/>
-            // },
+            }
         
         ]
     },

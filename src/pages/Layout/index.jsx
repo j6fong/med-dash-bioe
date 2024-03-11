@@ -21,6 +21,7 @@ import {
 } from "@ant-design/icons";
 import "./index.scss";
 import { Outlet } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 // import Vis from '../../components/Vis.jsx"'
 
 const { Header, Sider } = Layout;
@@ -47,6 +48,12 @@ function sayhello() {
 }
 
 const GeekLayout = () => {
+  const navigate = useNavigate(); // Initialize useNavigate hook
+
+    const handleLogout = () => {
+        // Perform any logout actions here
+        navigate('/login'); // Navigate to the login page
+    };
   return (
     <Layout>
       <Header className="layout-header">
@@ -54,8 +61,8 @@ const GeekLayout = () => {
         <div className="user-info">
           <span className="user-name">user.name</span>
           <span className="user-logout">
-            <Popconfirm title="Are you sure you want to logout? " okText="logout" cancelText="cancel">
-              <LogoutOutlined /> logout
+            <Popconfirm title="Are you sure you want to logout?" onConfirm={handleLogout} okText="Logout" cancelText="Cancel">
+                <LogoutOutlined /> Logout
             </Popconfirm>
           </span>
         </div>
@@ -97,3 +104,4 @@ const GeekLayout = () => {
 };
 
 export default GeekLayout;
+
