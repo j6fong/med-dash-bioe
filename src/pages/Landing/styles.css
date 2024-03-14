@@ -7,33 +7,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh; /* Set the height to 100% of the viewport height */
+    height: 30vh; /* Set the height to 100% of the viewport height */
     overflow-y: auto; 
+    background-color: white;
 }
 
 .title {
     font-size: 36px;
     font-weight: bold;
     color: #333;
-    margin-top: 200px
+    margin-top: 30px;
 }
 
 .paragraph {
     font-size: 16px;
     color: #666;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
+    width: 100px; /* Set width for button */
+    height: 30px;
+    padding: 5px 10px;
+    margin-top: 5px;
     font-size: 16px;
     color: #fff;
     background-color: #007bff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .button:hover {
@@ -60,6 +64,178 @@
     position: absolute; /* Set position to absolute */
     left: -60px; /* Adjust left value to position the text to the right of the logo */
     top: -20px; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding-top: 0px; /* Add top padding */
+    margin-top:60px; /* Add top margin */
+    padding-bottom: 10px;
+}
+
+.navbar-links{
+    list-style-type: none;
+}
+
+.navbar-links a {
+    
+    margin-right: 60px; /* Adjust the margin as needed */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;;
+}
+
+#about {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#about p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#goals {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#goals h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#goals p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#ourteam {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#ourteam h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#ourteam p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#faq {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#faq h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#faq p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: inline-block;
+}
+
+.navbar li {
+    float: none;
+    display: inline-block; 
+}
+
+.navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+details {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+summary {
+    padding: 10px;
+    cursor: pointer;
+}
+
+p {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0;
 }
 
 
