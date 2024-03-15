@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import './styles.css';
 import logo from "@/assets/dashboard_icon.svg";
+import teammember1 from '@/assets/team-member1.jpeg'
 
 const LandingPage = () => {
     const navigate = useNavigate(); // Initialize useNavigate hook
@@ -61,12 +62,30 @@ const LandingPage = () => {
 
             <section id="goals">
                 <h2>Goals Section</h2>
-                <p>Content for the Goals section...</p>
+                <div class="side-by-side">
+                    <div class="left">
+                        <h3>Mission Statement</h3>
+                        <p>Left side text...</p>
+                    </div>
+                    <div class="right">
+                        <h3>Vision Statement</h3>
+                        <p>Right side text...</p>
+                    </div>
+                </div>
             </section>
 
             <section id="ourteam">
                 <h2>Our Team Section</h2>
-                <p>Content for the Our Team section...</p>
+                <div className="team-member1-container">
+                    <img src={teammember1} alt="Team Member 1"/>
+                    <h3>Team Member 1</h3>
+                    <p>Description of Team Member 1...</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member2.jpg" alt="Team Member 2"/>
+                    <h3>Team Member 2</h3>
+                    <p>Description of Team Member 2...</p>
+                </div>
             </section>
 
             <section id="faq">

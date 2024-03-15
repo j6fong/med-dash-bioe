@@ -238,4 +238,38 @@ p {
     margin: 0;
 }
 
+.side-by-side {
+    display: flex;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+#ourteam {
+    text-align: center; /* Center align the content */
+}
+.team-member1-container {
+    /*display: flex;
+    align-items: center;
+    position: fixed; Set position to fixed */
+    top: 20px; /* Position the logo container 20px from the top of the viewport */
+    left: 60px; /* Position the logo container 20px from the left of the viewport */
+    /*z-index: 1000; */
+}
+
+.logo-text {
+    margin-left: 15px;
+    font-weight: 700; 
+    color: gray/* Add space between the logo and the text */
+}
+
+.logo {
+    position: absolute; /* Set position to absolute */
+    left: -60px; /* Adjust left value to position the text to the right of the logo */
+    top: -20px; 
+}
+
+
+
 
