@@ -11,6 +11,8 @@ import teammember6 from '@/assets/team-member6.jpeg'
 import teammember7 from '@/assets/team-member7.jpeg'
 // import teammember8 from '@/assets/team-member8.jpeg'
 import teammember9 from '@/assets/team-member9.jpeg'
+import mentor from '@/assets/mentor.jpeg'
+import clinic from '@/assets/clinic.jpeg'
 
 const LandingPage = () => {
     const navigate = useNavigate(); // Initialize useNavigate hook
@@ -52,7 +54,7 @@ const LandingPage = () => {
                 <h2>About</h2>
                 <div class="subsection" id = "introduction">
                     <h3>Introduction</h3>
-                    <p>Scripts.com</p>
+                    <p>As health sensor technology becomes more advanced and common amongst the general population, we are provided with a whole plethora of health related data that can provide meaningful insights to a person’s health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status.</p>
                 </div>
                 <div class="subsection" id = "background">
                     <h3>Background</h3>
@@ -182,6 +184,29 @@ const LandingPage = () => {
                             <h3>Shrishti Seksaria</h3>
                             <p>  Hi! Im Shrishti, senior at UCSD pursuing Data Science and Economics. I hope to use data and technology to help others make better data driven decisions across all industries. In my free time I like to write poetry, play badminton, or go hiking !</p>
                         </div>
+                    </div>
+                </div>
+                <div class="side-by-side-our-team">
+                    <div class="mentor">
+                    <h2>Mentor</h2>
+                        <div class="special-container">
+                        <img src={mentor} alt="Mentor"/>
+                        
+                        <div class="text-container">
+                            <h3>Benjamin Smarr</h3>
+                            <p>  Hello</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="clinic">
+                        <h2>Clinic</h2>
+                        <div class="special-container">
+                        <img src={clinic} alt="Clinic"/>
+                        <div class="text-container">
+                            <h3>Measured Wellness</h3>
+                            <p>  Hello there</p>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </section>

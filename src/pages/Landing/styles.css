@@ -105,6 +105,7 @@
     color: #666;
     font-size: 16px;
     line-height: 1.5;
+    text-align:left;
 }
 
 #goals {
@@ -267,13 +268,39 @@ p {
     flex: 1;
 }
 
-/* #ourteam {
+.side-by-side-our-team {
+    display: flex;
+}
+
+.mentor, .clinic {
+    flex: 1;
+}
+
+#ourteam .special-container {
+    flex: 0 0 calc(25% - 20px); /* Set the width of each container (adjust percentage and margin as needed) */
+    margin: 10px; /* Add some margin between containers */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-} */
+    
+}
+
+#ourteam .special-container img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+}
 
 
+#ourteam .special-container h3{
+    font-weight:bold;
 
+}
+#ourteam .special-container p {
+    margin-top: 10px;
 
+}
 
 .logo-text {
     margin-left: 15px;
