@@ -40,6 +40,7 @@ const LandingPage = () => {
                             <a href="#background">Background</a> 
                             <a href="#datacollection">Data Collection</a>
                             <a href="#methods">Methods</a>     
+                            <a href="#nextsteps">Next Steps</a>
                         </div>
                     </li>
                     <li> <a href="#goals">Goals</a> <a href="#ourteam">Our Team</a> <a href="#faq">FAQ</a> <button className="button" onClick={handleLoginClick}>Login</button></li> 
@@ -54,19 +55,23 @@ const LandingPage = () => {
                 <h2>About</h2>
                 <div class="subsection" id = "introduction">
                     <h3>Introduction</h3>
-                    <p>As health sensor technology becomes more advanced and common amongst the general population, we are provided with a whole plethora of health related data that can provide meaningful insights to a person’s health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status.</p>
+                    <p>As health sensor technology becomes more advanced and common amongst the general population, we as Bioengineers are provided with a whole plethora of health related data that can provide meaningful insights to a person's health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status.</p>
                 </div>
                 <div class="subsection" id = "background">
                     <h3>Background</h3>
-                    <p>Content for Subsection 2...</p>
+                    <p>Major insufficiencies in healthcare systems today leave patients and clinicians alike wanting for a more effective way of receiving and giving care. Several major deficiencies are 1) the lack of an integrated Electronic Health Record (EHR), lifelog, and personal omics data, and 2) the lack of standardization across healthcare systems, data standards, and terminologies. This incompatibility creates inefficiencies in operating personalized medicine, leading to problems with interoperability and introducing ambiguity into the healthcare environment, especially amongst patients, their providers, and organizations. We talked to real patients who have struggled with these issues in their medical are history, and identified the core problems they were having with the way care was prescribed to them. Using this information, we proceeded to come up with a solution that could help boost the communication and understanding between patients and their healthcare providers.</p>
                 </div>
                 <div class="subsection" id = "datacollection">
                     <h3>Data Collection</h3>
-                    <p>Content for Subsection 1...</p>
+                    <p>We were given data from volunteer patients that were eager to help with our project. The data comes from the Vital API and includes variables such as: heart rate, calories burned, number of steps, etc. This is unique from other dashboards as we are obtaining the data from the patients themselves that they provide from different sources.</p>
                 </div>
                 <div class="subsection" id = "methods">
                     <h3>Methods</h3>
-                    <p>Content for Subsection 2...</p>
+                    <p>For design, we used third party libraries called “AntDesign” and "shadcn/ui" as the primary tool to integrate visualizations onto our website while using Pandas, Numpy, MongoDB to create a data pipeline that is designed to pull, read, clean, standardize, and add features to the data given to our team from the Vital APIs. To host our work, we used React.js hosted on Github Pages to create a website that would allow the user to interact with the visualizations.</p>
+                </div>
+                <div class="subsection" id = "nextsteps">
+                    <h3>Next Steps</h3>
+                    <p>Incorporating more functionalities to the medical dashboard such as journal entry, predictive analytics and real-time health alerts. Getting more feedback from patients/users will help us determine what features are helpful.</p>
                 </div>
             </section> 
 
@@ -74,12 +79,12 @@ const LandingPage = () => {
                 <h2>Goals Section</h2>
                 <div class="side-by-side">
                     <div class="left">
-                        <h3>Mission Statement</h3>
-                        <p>Left side text...</p>
+                        <h3>Problem Statement</h3>
+                        <p>Patient data is distributed across multiple platforms, resulting in a lack of holistic view of patients’ health as well as difficulties in data storage, platform syncing, and data security, which leads to difficult user experiences and skepticism of health data apps for both clinicians and patients.</p>
                     </div>
                     <div class="right">
-                        <h3>Vision Statement</h3>
-                        <p>Right side text...</p>
+                        <h3>Overview of Solution</h3>
+                        <p>MedDash is a website portal that aims to solve this problem by integrating data from different sources and displaying it in joined graphs and statistics which can be accessible to the individual and their provider. Additionally, MedDash can track variables missed by wearables through Diary Entries and Health Habit Trackers.</p>
                     </div>
                 </div>
             </section>
@@ -191,10 +196,10 @@ const LandingPage = () => {
                     <h2>Mentor</h2>
                         <div class="special-container">
                         <img src={mentor} alt="Mentor"/>
-                        
+                
                         <div class="text-container">
-                            <h3>Benjamin Smarr</h3>
-                            <p>  Hello</p>
+                            <h3> <a href= "https://smarr.ucsd.edu/" style={{textDecoration:"underline"}}>Benjamin Smarr</a></h3>
+                            <p>Assistant Professor in Department of Bioengineering, with a 50% appointment to the Halicioglu Data Science Institute</p>
                         </div>
                     </div>
                     </div>
@@ -203,8 +208,8 @@ const LandingPage = () => {
                         <div class="special-container">
                         <img src={clinic} alt="Clinic"/>
                         <div class="text-container">
-                            <h3>Measured Wellness</h3>
-                            <p>  Hello there</p>
+                            <h3> <a href= "https://www.measured-wellness.com/about" style={{textDecoration:"underline"}}>Measured Wellness</a> </h3>
+                            <p>Empowering their patients to gain insight into their health through personal trackers, and provide the holistic care needed to optimize their well-being</p>
                         </div>
                     </div>
                     </div>
@@ -215,12 +220,24 @@ const LandingPage = () => {
                 <h2>FAQs</h2>
                 <div className="faq">
                 <details>
-                    <summary>Question 1?</summary>
+                    <summary>What does MedDash currently provide?</summary>
                     <p>Answer 1.</p>
                 </details>
                 <details>
-                    <summary>Question 2?</summary>
-                    <p>Answer 2.</p>
+                    <summary>What makes MedDash unique or diferent from existing dashboards?</summary>
+                    <p>Answer</p>
+                </details>
+                <details>
+                    <summary>Where does the data come from?</summary>
+                    <p>Answer</p>
+                </details>
+                <details>
+                    <summary>How was MedDash created?</summary>
+                    <p>Answer</p>
+                </details>
+                <details>
+                    <summary>What features would be added to MedDash in the future?</summary>
+                    <p>Answer</p>
                 </details>
             {/* Add more questions and answers as needed */}
                  </div>

@@ -11,7 +11,7 @@ If you haven't install Node.js in your computer,please download it from the foll
 4. Enter src directory, create a new folder called "vital_csvs".
 5. Run the following command to fetch data:<br>
 ```python pull_mongodb_data.py```<br>
-```pyhton process_vital_data.py analysis```<br>
+```python process_vital_data.py analysis```<br>
 6. Start the server:<br>
 ```npm run dev```
 7. After starting the server, you will see the URL of the local host displayed in the terminal.<br>
