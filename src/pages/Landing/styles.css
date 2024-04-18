@@ -1,4 +1,5 @@
 /* src/pages/LandingPage/styles.css */
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -102,6 +103,11 @@
     font-size: 16px;
     line-height: 1.5;
     text-align:left;
+}
+
+iframe {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 15px;
 }
 
 #goals {

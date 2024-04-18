@@ -22,7 +22,7 @@ import {
 import "./index.scss";
 import { Outlet } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
-// import Vis from '../../components/Vis.jsx"'
+import logo from '@/assets/dashboard_icon.svg';
 
 const { Header, Sider } = Layout;
 
@@ -50,21 +50,29 @@ function sayhello() {
 const GeekLayout = () => {
   const navigate = useNavigate(); // Initialize useNavigate hook
 
-    const handleLogout = () => {
-        // Perform any logout actions here
-        navigate('/login'); // Navigate to the login page
-    };
+  const handleLandingClick = () => {
+    navigate('/landing'); // Navigate to the login page
+  };
+
+  const handleLogout = () => {
+      // Perform any logout actions here
+      navigate('/login'); // Navigate to the login page
+  };
+  
   return (
     <Layout>
       <Header className="layout-header">
-        <div className="logo" />
-        <div className="user-info">
-          <span className="user-name">user.name</span>
-          <span className="user-logout">
-            <Popconfirm title="Are you sure you want to logout?" onConfirm={handleLogout} okText="Logout" cancelText="Cancel">
-                <LogoutOutlined /> Logout
-            </Popconfirm>
-          </span>
+        <div className="logo-container" >
+          <img src={logo} alt="logo landing page button" onClick={handleLandingClick} />
+          <span className="logo-text">MedDash</span>
+          <div className="user-info">
+            <span className="user-name">user.name</span>
+            <span className="user-logout">
+              <Popconfirm title="Are you sure you want to logout?" onConfirm={handleLogout} okText="Logout" cancelText="Cancel">
+                  <LogoutOutlined /> Logout
+              </Popconfirm>
+            </span>
+          </div>
         </div>
       </Header>
       <Layout>

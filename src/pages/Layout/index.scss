@@ -6,9 +6,17 @@
     padding: 0;
   }
   
-  .logo {
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-container img {
     height: 60px;
-    background: url('@/assets/dashboard_icon.svg') no-repeat center / 60px auto;
+  }
+
+  .logo-container img:hover {
+    cursor: pointer;
   }
   
   .layout-content {
@@ -18,11 +26,10 @@
   }
   
   .user-info {
-    position: absolute;
-    right: 0;
-    top: 0;
     padding-right: 20px;
     color: #fff;
+    display: flex;
+    margin-left: auto;
     
     .user-name {
       color: black;
@@ -36,6 +43,7 @@
     }
   }
   .ant-layout-header {
+    height: max-content;
     padding: 0 !important;
     background-color: #fff;
 }

@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
     const dispatch = useDispatch()
     const navigate  = useNavigate()
+
     const onFinish = async (values)=>{
         console.log(values)
         // triger async action fetchLogin
@@ -20,13 +21,17 @@ const Login = () => {
 
     }
 
+    const handleLandingClick = () => {
+      navigate('/landing'); // Navigate to the login page
+    };
+
     const handleCancel = () => {
       navigate('/landing'); // Navigate to the landing page
     };
   return (
     <div className="login">
       <Card className="login-container">
-        <img className="login-logo" src={logo} alt="" />
+        <img className="login-logo" src={logo} alt="" onClick={handleLandingClick} />
         {/* 登录表单 */} 
         <Form onFinish={onFinish} validateTrigger="onBlur">
           <Form.Item
