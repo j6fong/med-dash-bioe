@@ -9,11 +9,16 @@ import teammember4 from '@/assets/team-member4.jpeg'
 import teammember5 from '@/assets/team-member5.jpeg'
 import teammember6 from '@/assets/team-member6.jpeg'
 import teammember7 from '@/assets/team-member7.jpeg'
-// import teammember8 from '@/assets/team-member8.jpeg'
+import teammember8 from '@/assets/team-member8.jpeg'
 import teammember9 from '@/assets/team-member9.jpeg'
+import teammember10 from '@/assets/team-member10.jpeg'
+import teammember11 from '@/assets/team-member11.jpeg'
+import teammember12 from '@/assets/team-member12.jpeg'
+import teammember13 from '@/assets/team-member13.jpeg'
+import teammember14 from '@/assets/team-member14.jpeg'
 import mentor from '@/assets/mentor.jpeg'
 import clinic from '@/assets/clinic.jpeg'
-
+import healthsensors from '@/assets/healthsensors.jpeg'
 const LandingPage = () => {
     const navigate = useNavigate(); // Initialize useNavigate hook
 
@@ -61,9 +66,14 @@ const LandingPage = () => {
 
             <section id="about">
                 <h2>About</h2>
-                <div className="subsection" id = "introduction">
-                    <h3>Introduction</h3>
-                    <p>As health sensor technology becomes more advanced and common amongst the general population, we as Bioengineers are provided with a whole plethora of health related data that can provide meaningful insights to a person's health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status.</p>
+                <div className="subsection" id = "introduction" >
+                    <div>
+                        <h3>Introduction</h3>
+                        <p>As health sensor technology becomes more advanced and common amongst the general population, we as Bioengineers are provided with a whole plethora of health related data that can provide meaningful insights to a person's health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status.</p>
+                    </div>
+                    <div>
+                        <img src={healthsensors} alt="Health Sensors" />
+                    </div>
                 </div>
                 <div className="subsection" id = "background">
                     <h3>Background</h3>
@@ -151,7 +161,7 @@ const LandingPage = () => {
                         </div>
                     </div>
                     <div className="team-member-container">
-                        <img src="{teammember8} "alt="Team Member 8"/>
+                        <img src={teammember8} alt="Team Member 8"/>
                         <div className="text-container">
                             <h3>Wenhua Tang</h3>
                             <p>Hi! I'm Wenhua. I am currently in my third year at UC San Diego studying Data Science. I hope to find a job in data engineering in the future. During my free time, I enjoy playing video games and cooking.</p>
@@ -165,35 +175,35 @@ const LandingPage = () => {
                         </div>
                     </div>
                     <div className="team-member-container">
-                        <img src="{teammember10}" alt="Team Member 10"/>
+                        <img src={teammember10} alt="Team Member 10"/>
                         <div className="text-container">
                             <h3>Eric Park</h3>
                             <p>Hi, I’m Eric and I’m currently a fourth year data science student at UCSD. In my free time, I enjoy playing basketball with friends and playing video games. </p>
                         </div>
                     </div>
                     <div className="team-member-container">
-                        <img src="{teammember11}" alt="Team Member 11"/>
+                        <img src={teammember11} alt="Team Member 11"/>
                         <div className="text-container">
                             <h3>Zhilin Guo</h3>
                             <p> Fourth year student at UCSD, majoring in Data Science. I hope AI can provide more specific health services in the future. </p>
                         </div>
                     </div>
                     <div className="team-member-container">
-                        <img src="{teammember12}" alt="Team Member 12"/>
+                        <img src={teammember12} alt="Team Member 12"/>
                         <div className="text-container">
                             <h3>Bryan Talavera</h3>
                             <p> Hi, I’m Bryan. I am a fourth year Data Science major. I hope to use my understanding of Data Science to help others make informed data-driven decisions. I enjoy skateboarding and playing video games with friends. </p>
                         </div>
                     </div>
                     <div className="team-member-container">
-                        <img src="{teammember13}" alt="Team Member 13"/>
+                        <img src={teammember13} alt="Team Member 13"/>
                         <div className="text-container">
                             <h3>Yuchu Yan</h3>
                             <p> Hi, I'm a senior student at UCSD, majoring in Data Science with a minor in General Biology. My ambition is to integrate data science with other fields, particularly in the realm of biology. In my spare time, I enjoy go-karting, motorcycling, and baking.</p>
                         </div>
                     </div>
                     <div className="team-member-container">
-                        <img src="{teammember14}" alt="Team Member 14"/>
+                        <img src={teammember14} alt="Team Member 14"/>
                         <div className="text-container">
                             <h3>Shrishti Seksaria</h3>
                             <p>  Hi! Im Shrishti, senior at UCSD pursuing Data Science and Economics. I hope to use data and technology to help others make better data driven decisions across all industries. In my free time I like to write poetry, play badminton, or go hiking !</p>

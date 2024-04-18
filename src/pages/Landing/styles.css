@@ -105,6 +105,42 @@
     text-align:left;
 }
 
+#introduction{
+    text-align:left;
+    display:flex;
+}
+#introduction h3{
+    text-align:left;
+    font-weight:bold
+}
+
+#introduction p, div {
+    flex: 1;
+}
+
+
+#background{
+    text-align:right;
+}
+#background h3{
+    text-align:right;
+    font-weight:bold
+}
+#datacollection{
+    text-align:left
+}
+#datacollection h3{
+    text-align:left;
+    font-weight:bold
+}
+#methods{
+    text-align:right
+}
+#methods h3{
+    text-align:right;
+    font-weight:bold
+}
+
 iframe {
     border: 1px solid rgba(0, 0, 0, 0.3);
     margin: 15px;
