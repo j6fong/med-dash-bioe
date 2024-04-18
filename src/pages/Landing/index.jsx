@@ -67,12 +67,12 @@ const LandingPage = () => {
             <section id="about">
                 <h2>About</h2>
                 <div className="subsection" id = "introduction" >
-                    <div>
+                    <div >
                         <h3>Introduction</h3>
                         <p>As health sensor technology becomes more advanced and common amongst the general population, we as Bioengineers are provided with a whole plethora of health related data that can provide meaningful insights to a person's health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status.</p>
                     </div>
                     <div>
-                        <img src={healthsensors} alt="Health Sensors" />
+                        <img src={healthsensors} alt="Health Sensors" style={{ marginLeft: 'auto' }} />
                     </div>
                 </div>
                 <div className="subsection" id = "background">

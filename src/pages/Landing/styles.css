@@ -116,6 +116,7 @@
 
 #introduction p, div {
     flex: 1;
+    align-items:right;
 }
 
 
@@ -126,6 +127,9 @@
     text-align:right;
     font-weight:bold
 }
+
+
+
 #datacollection{
     text-align:left
 }
