@@ -45,25 +45,22 @@
 }
 
 .logo-container {
-    /*display: flex;
+    display: flex;
     align-items: center;
-    position: fixed; Set position to fixed */
-    top: 20px; /* Position the logo container 20px from the top of the viewport */
-    left: 60px; /* Position the logo container 20px from the left of the viewport */
-    /*z-index: 1000; */
-    position: fixed
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 .logo-text {
-    margin-left: 15px;
     font-weight: 700; 
     color: gray/* Add space between the logo and the text */
-}
-
-.logo {
-    position: absolute; /* Set position to absolute */
-    left: -60px; /* Adjust left value to position the text to the right of the logo */
-    top: -20px; 
 }
 
 .navbar {
@@ -71,7 +68,6 @@
     justify-content: space-around;
     background-color: #f8f9fa;
     padding-top: 0px; /* Add top padding */
-    margin-top:60px; /* Add top margin */
     padding-bottom: 10px;
 }
 
@@ -300,18 +296,6 @@ p {
 #ourteam .special-container p {
     margin-top: 10px;
 
-}
-
-.logo-text {
-    margin-left: 15px;
-    font-weight: 700; 
-    color: gray/* Add space between the logo and the text */
-}
-
-.logo {
-    position: absolute; /* Set position to absolute */
-    left: -60px; /* Adjust left value to position the text to the right of the logo */
-    top: -20px; 
 }
 
 
