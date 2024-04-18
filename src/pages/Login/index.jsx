@@ -54,7 +54,7 @@ const Login = () => {
               },
             ]}
           >
-            <Input size="large" placeholder="password" />
+            <Input size="large" type="password" placeholder="password" />
           </Form.Item>
           <Form.Item>
             <Button type="primary" htmlType="submit" size="large" block>
