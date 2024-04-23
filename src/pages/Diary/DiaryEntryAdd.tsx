@@ -112,6 +112,17 @@ export function EntryForm({ onSubmit }: EntryFormProps) {
                                 </FormItem>
                             )}
                         />
+                        {/* <input
+                            type="file"
+                            id="img"
+                            name="img"
+                            accept="image/*"
+                            onChange={(e) => {
+                                // Handle the image upload here
+                                const file = e.target.files[0];
+                                form.setValue("img", file);
+                            }}
+                        /> */}
                     </CardContent>
                 <Button type="submit">Submit</Button>
                 </form>
