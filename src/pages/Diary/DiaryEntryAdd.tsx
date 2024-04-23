@@ -112,6 +112,7 @@ export function EntryForm({ onSubmit }: EntryFormProps) {
                                 </FormItem>
                             )}
                         />
+                        {/* TODO: ADD IMAGE UPLOAD */}
                         {/* <input
                             type="file"
                             id="img"
