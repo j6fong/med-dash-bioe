@@ -1,6 +1,6 @@
 {
-    "auth_key": "sk_us_nln-gF8oaM-THjcXVokcPY2VDQYGTJ4-kGXf7hjeFJk",
-    "user_id": "21d1b7f7-974f-4758-a4e7-23ef86a5ddd2",
+    "auth_key": "",
+    "user_id": "",
     "functions": [
         "blood_oxygen", "blood_pressure", "caffeine", "cholesterol", "glucose",
         "heartrate", "hrv", "hypnogram", "igg", "ige", "mindfulness_minutes",
@@ -8,7 +8,7 @@
         "distance", "floors_climbed", "steps"
     ],
     "start_date": "2024-02-20",
-    "end_date": "2024-04-15",
+    "end_date": "2024-04-22",
     "directory": "./src/vital_csvs",
-    "uri":"mongodb+srv://med-dash-deploy:passwordisGood@cluster0.ludjpq9.mongodb.net/?retryWrites=true&w=majority"
+    "uri":""
 }
