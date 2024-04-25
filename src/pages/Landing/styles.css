@@ -1,5 +1,9 @@
 /* src/pages/LandingPage/styles.css */
 
+body {
+    background-color: #333;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -49,6 +53,7 @@
     display: flex;
     align-items: center;
     padding: 8px;
+    border-bottom: 10px #333 solid;
     position: sticky;
     top: 0;
     background-color: white;
@@ -84,6 +89,11 @@
     font-weight: bold;;
 }
 
+.section-title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 #about {
     background-color: white;
     padding: 20px;
@@ -111,7 +121,7 @@
 }
 #introduction h3{
     text-align:left;
-    font-weight:bold
+    font-weight:bold;
 }
 
 #introduction p, div {
@@ -121,28 +131,35 @@
 
 
 #background{
-    text-align:right;
+    text-align:left;
 }
 #background h3{
-    text-align:right;
-    font-weight:bold
+    text-align:left;
+    font-weight:bold;
 }
 
-
-
 #datacollection{
-    text-align:left
+    text-align:left;
 }
 #datacollection h3{
     text-align:left;
-    font-weight:bold
+    font-weight:bold;
 }
 #methods{
-    text-align:right
+    text-align:left;
 }
 #methods h3{
-    text-align:right;
-    font-weight:bold
+    text-align:left;
+    font-weight:bold;
+}
+
+#nextsteps{
+    text-align: left;
+}
+
+#nextsteps h3{
+    text-align:left;
+    font-weight:bold;
 }
 
 iframe {
@@ -170,6 +187,14 @@ iframe {
     line-height: 1.5;
 }
 
+.left h3{
+    font-weight:bold;
+}
+
+.right h3{
+    font-weight:bold;
+}
+    
 #ourteam {
     background-color: white;
     padding: 20px;

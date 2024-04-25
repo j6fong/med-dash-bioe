@@ -65,9 +65,9 @@ const LandingPage = () => {
             </div>
 
             <section id="about">
-                <h2>About</h2>
+                <h2  className='section-title'>About</h2>
                 <div className="subsection" id = "introduction" >
-                    <div >
+                    <div>
                         <h3>Introduction</h3>
                         <p>As health sensor technology becomes more advanced and common amongst the general population, we as Bioengineers are provided with a whole plethora of health related data that can provide meaningful insights to a person's health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status.</p>
                     </div>
@@ -86,7 +86,7 @@ const LandingPage = () => {
                 <div className="subsection" id = "methods">
                     <h3>Methods</h3>
                     <p>For design, we used third party libraries called “AntDesign” and "shadcn/ui" as the primary tool to integrate visualizations onto our website while using Pandas, Numpy, MongoDB to create a data pipeline that is designed to pull, read, clean, standardize, and add features to the data given to our team from the Vital APIs. To host our work, we used React.js hosted on Github Pages to create a website that would allow the user to interact with the visualizations.</p>
-                    <iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJPJjbZ2u7vChFA5TZPSZDr%2FWebsite-Brainstorm%3Ftype%3Dwhiteboard%26t%3D3oKX5i7KCSgVZmX8-1" allowfullscreen></iframe>
+                    <iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJPJjbZ2u7vChFA5TZPSZDr%2FWebsite-Brainstorm%3Ftype%3Dwhiteboard%26t%3D3oKX5i7KCSgVZmX8-1" allowFullScreen></iframe>
                 </div>
                 <div className="subsection" id = "nextsteps">
                     <h3>Next Steps</h3>
@@ -95,7 +95,7 @@ const LandingPage = () => {
             </section> 
 
             <section id="goals">
-                <h2>Goals Section</h2>
+                <h2 className='section-title'>Goals Section</h2>
                 <div className="side-by-side">
                     <div className="left">
                         <h3>Problem Statement</h3>
@@ -109,7 +109,7 @@ const LandingPage = () => {
             </section>
 
             <section id="ourteam">
-                <h2>Our Team Section</h2>
+                <h2 className='section-title'>Our Team Section</h2>
                 <div className= "team-members-container">
                     <div className="team-member-container">
                         <img src={teammember1} alt="Team Member 1"/>
@@ -236,7 +236,7 @@ const LandingPage = () => {
             </section>
 
             <section id="faq">
-                <h2>FAQs</h2>
+                <h2 className='section-title'>FAQs</h2>
                 <div className="faq">
                 <details>
                     <summary>What does MedDash currently provide?</summary>

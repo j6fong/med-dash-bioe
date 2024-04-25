@@ -112,11 +112,11 @@ const MoodSelector = ({ onMoodSelect }) => {
 
 
 const Home = () => (
-    <body>
+    <div>
       <WelcomeHeader/>
       <MoodSurvey/>
       <ProgressCheck />
-    </body>
+    </div>
   );
   
   export default Home;
